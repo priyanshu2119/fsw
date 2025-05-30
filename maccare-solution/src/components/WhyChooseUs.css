@@ -1,0 +1,406 @@
+/* Why Choose Us Section Styles */
+.why-choose-us {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-choose-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23007bff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.why-choose-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Reasons Grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.reason-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.reason-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.reason-card:hover::before {
+  transform: scaleX(1);
+}
+
+.reason-card.highlighted {
+  border: 2px solid #ffc107;
+  background: linear-gradient(135deg, #fff9e6, #ffffff);
+}
+
+.reason-card.highlighted::before {
+  background: linear-gradient(90deg, #ffc107, #e0a800);
+  transform: scaleX(1);
+}
+
+.reason-icon {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.reason-card.highlighted .reason-icon {
+  color: #ffc107;
+}
+
+.reason-card:hover .reason-icon {
+  transform: scale(1.1);
+}
+
+.reason-content h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.reason-content p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.highlight-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #ffc107;
+  font-size: 20px;
+}
+
+/* Achievements Section */
+.achievements-section {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.achievements-section h3 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.achievement-item {
+  text-align: center;
+}
+
+.achievement-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffc107;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/* Trust Indicators */
+.trust-indicators {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.trust-item:hover {
+  transform: translateY(-5px);
+}
+
+.trust-item svg {
+  font-size: 40px;
+  color: #007bff;
+  flex-shrink: 0;
+}
+
+.trust-item h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.trust-item p {
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.cta-section {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section h3 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  min-width: 150px;
+}
+
+.cta-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .reasons-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .reason-card {
+    padding: 20px;
+  }
+
+  .reason-icon {
+    font-size: 36px;
+  }
+
+  .reason-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .achievements-section {
+    padding: 30px 20px;
+  }
+
+  .achievements-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .achievement-number {
+    font-size: 2.5rem;
+  }
+
+  .achievement-label {
+    font-size: 1rem;
+  }
+
+  .trust-indicators {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .trust-item {
+    padding: 20px;
+  }
+
+  .trust-item svg {
+    font-size: 30px;
+  }
+
+  .cta-section {
+    padding: 30px 20px;
+  }
+
+  .cta-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cta-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Genuine Parts Section */
+.genuine-parts-section {
+  text-align: center;
+  margin: 60px 0;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.genuine-parts-section h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.genuine-parts-section h4 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.genuine-parts-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-top: 60px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-item {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}

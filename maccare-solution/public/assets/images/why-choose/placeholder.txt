@@ -1,0 +1,2 @@
+This directory contains placeholder images for the "Why Choose Us" section.
+In a real implementation, these would be actual image files.

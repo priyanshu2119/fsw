@@ -1,0 +1,49 @@
+<!-- This is a placeholder for hero slide 1 image -->
+<!-- In a real implementation, this would be an actual JPG image file -->
+<!-- For now, creating an SVG placeholder that represents iPhone repair services -->
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- iPhone illustration -->
+  <g transform="translate(960, 540)">
+    <!-- iPhone body -->
+    <rect x="-80" y="-200" width="160" height="400" rx="25" fill="#333" stroke="#666" stroke-width="3"/>
+    <!-- iPhone screen -->
+    <rect x="-70" y="-180" width="140" height="360" rx="15" fill="#000"/>
+    <!-- Screen content -->
+    <rect x="-60" y="-160" width="120" height="320" rx="10" fill="#f0f0f0"/>
+
+    <!-- Cracked screen effect -->
+    <g stroke="#ff6b35" stroke-width="2" fill="none">
+      <path d="M-60 -100 L 60 100"/>
+      <path d="M-40 -160 L 40 160"/>
+      <path d="M-60 50 L 60 -50"/>
+    </g>
+
+    <!-- Home button -->
+    <circle cx="0" cy="170" r="15" fill="#333" stroke="#666" stroke-width="2"/>
+
+    <!-- Repair tools around phone -->
+    <g transform="translate(-150, -50)">
+      <!-- Screwdriver -->
+      <rect x="-3" y="-50" width="6" height="100" fill="#ff6b35"/>
+      <circle cx="0" cy="-55" r="5" fill="#333"/>
+    </g>
+
+    <g transform="translate(150, 50)">
+      <!-- Spudger tool -->
+      <rect x="-2" y="-40" width="4" height="80" fill="#4CAF50"/>
+      <rect x="-4" y="-45" width="8" height="5" fill="#333"/>
+    </g>
+  </g>
+
+  <!-- Text overlay -->
+  <text x="960" y="200" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">iPhone Repair Services</text>
+  <text x="960" y="260" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-size="24">Expert Screen Replacement &amp; Repair</text>
+</svg>

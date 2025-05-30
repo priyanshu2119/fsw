@@ -1,0 +1,39 @@
+<!-- This is a placeholder for hero slide 2 image -->
+<!-- In a real implementation, this would be an actual JPG image file -->
+<!-- For now, creating an SVG placeholder that represents iPad repair services -->
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  
+  <!-- iPad illustration -->
+  <g transform="translate(960, 540)">
+    <!-- iPad body -->
+    <rect x="-200" y="-300" width="400" height="600" rx="30" fill="#333" stroke="#666" stroke-width="4"/>
+    <!-- iPad screen -->
+    <rect x="-180" y="-260" width="360" height="520" rx="10" fill="#000"/>
+    <!-- Screen content -->
+    <rect x="-160" y="-240" width="320" height="480" rx="5" fill="#f0f0f0"/>
+    
+    <!-- Repair tools -->
+    <g transform="translate(-300, 0)">
+      <!-- Screwdriver -->
+      <rect x="-5" y="-100" width="10" height="200" fill="#ff6b35"/>
+      <circle cx="0" cy="-110" r="8" fill="#333"/>
+    </g>
+    
+    <g transform="translate(300, 0)">
+      <!-- Wrench -->
+      <rect x="-5" y="-80" width="10" height="160" fill="#4CAF50"/>
+      <circle cx="0" cy="-90" r="12" fill="#333"/>
+    </g>
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="960" y="200" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="bold">iPad Repair Services</text>
+  <text x="960" y="260" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-size="24">Professional iPad Screen & Hardware Repair</text>
+</svg>
